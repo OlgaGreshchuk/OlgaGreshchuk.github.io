@@ -1,0 +1,90 @@
+body {
+    background-color: #0a0238e1;
+    color: slateblue;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    padding-top: 4px;
+}    
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 790px;
+    height: 30px;
+    padding: 5px;
+}
+#find_city {
+    width: 50px;
+}
+#today {
+    width: 100px;
+}
+#five_days {
+    width: 100px;
+}
+#input_city {
+    width: 300px;
+}
+
+button {
+    border-radius: 20px;
+}
+input {
+    border-radius: 20px;
+}
+#weather_today {
+    margin-top: 10px;
+    background-color: rgba(146, 143, 148, 0.274);
+    color: white;
+    border-radius: 15px;
+    width: 800px;
+    text-align: center;
+}
+.weather_main_info {
+    width: 800px;
+    height: 150px;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+    
+}
+#text_city {
+    font-size: 1.3em;
+}
+#city_name {
+    font-size: 2.2em;
+}
+#temperature {
+    font-size: 3.5em;
+}
+
+.details_row {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+    padding-bottom: 10px;
+}
+.details_item {
+    flex: 1;
+}
+.details_value {
+    font-size: 1.3em;
+    color: slateblue;
+}
+#temperature {
+    color: slateblue;
+}
+
+#weather_5days {
+    margin-top: 10px;
+    width: 760px;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    line-height: 350%;
+}
+
+img {
+    width: 33px;
+}

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <button id="today">сьогодні</button>
+        <button id="five_days">5 днів</button>
+        <input type="text" id="input_city" value="Ivano-Frankivsk">
+        <button id="find_city">&telrec;</button>
+    </header>
+
+    <div id="weather_today">
+        <div class="weather_main_info">
+            <div id="text_city">погода сьогодні в населеному пункті</div>
+            <div id="city_name"></div>
+            <div id="description"><img src="" alt=""></div>
+            <div id="temperature"></div>
+        </div>
+        <div class="details">
+            <div class="details_row">
+                <div class="details_item">
+                    <div id="text_feels_like">відчувається як</div>
+                    <div class="details_value" id="feels_like"></div>
+                </div>
+                <div class="details_item">
+                    <div id="text_wind">швидкість вітру, м/с</div>
+                    <div class="details_value" id="wind"></div>
+                </div>
+            </div>
+            <div class="details_row">
+                <div class="details_item">
+                    <div id="text_humidity">вологість повітря, %</div>
+                    <div class="details_value" id="humidity"></div>
+                </div>
+                <div class="details_item">
+                    <div id="text_pressure">атмосферний тиск, мм.рт.ст.</div>
+                    <div class="details_value" id="pressure"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="weather_5days">
+            
+        <div id="time_every3hours">
+            <div id="time0"></div>
+            <div id="time1"></div>
+            <div id="time2"></div>
+            <div id="time3"></div>
+            <div id="time4"></div>
+            <div id="time5"></div>
+            <div id="time6"></div>
+            <div id="time7"></div>
+            <div id="time8"></div>
+            <div id="time9"></div>
+            <div id="time10"></div>
+            <div id="time11"></div>
+            <div id="time12"></div>
+            <div id="time13"></div>
+            <div id="time14"></div>
+            <div id="time15"></div>
+            <div id="time16"></div>
+            <div id="time17"></div>
+            <div id="time18"></div>
+            <div id="time19"></div>
+            <div id="time20"></div>
+            <div id="time21"></div>
+            <div id="time22"></div>
+            <div id="time23"></div>
+            <div id="time24"></div>
+            <div id="time25"></div>
+            <div id="time26"></div>
+            <div id="time27"></div>
+            <div id="time28"></div>
+            <div id="time29"></div>
+            <div id="time30"></div>
+            <div id="time31"></div>
+            <div id="time32"></div>
+            <div id="time33"></div>
+            <div id="time34"></div>
+            <div id="time35"></div>
+            <div id="time36"></div>
+            <div id="time37"></div>
+            <div id="time38"></div>
+            <div id="time39"></div>       
+        </div>        
+
+        <div id="temp_every3hours">
+            <div id="temp0"></div>
+            <div id="temp1"></div>
+            <div id="temp2"></div>
+            <div id="temp3"></div>
+            <div id="temp4"></div>
+            <div id="temp5"></div>
+            <div id="temp6"></div>
+            <div id="temp7"></div>
+            <div id="temp8"></div>
+            <div id="temp9"></div>
+            <div id="temp10"></div>
+            <div id="temp11"></div>
+            <div id="temp12"></div>
+            <div id="temp13"></div>
+            <div id="temp14"></div>
+            <div id="temp15"></div>
+            <div id="temp16"></div>
+            <div id="temp17"></div>
+            <div id="temp18"></div>
+            <div id="temp19"></div>
+            <div id="temp20"></div>
+            <div id="temp21"></div>
+            <div id="temp22"></div>
+            <div id="temp23"></div>
+            <div id="temp24"></div>
+            <div id="temp25"></div>
+            <div id="temp26"></div>
+            <div id="temp27"></div>
+            <div id="temp28"></div>
+            <div id="temp29"></div>
+            <div id="temp30"></div>
+            <div id="temp31"></div>
+            <div id="temp32"></div>
+            <div id="temp33"></div>
+            <div id="temp34"></div>
+            <div id="temp35"></div>
+            <div id="temp36"></div>
+            <div id="temp37"></div>
+            <div id="temp38"></div>
+            <div id="temp39"></div>
+        </div>
+
+        <div id="wind_every3hours">
+            <div id="wind0"></div>
+            <div id="wind1"></div>
+            <div id="wind2"></div>
+            <div id="wind3"></div>
+            <div id="wind4"></div>
+            <div id="wind5"></div>
+            <div id="wind6"></div>
+            <div id="wind7"></div>
+            <div id="wind8"></div>
+            <div id="wind9"></div>
+            <div id="wind10"></div>
+            <div id="wind11"></div>
+            <div id="wind12"></div>
+            <div id="wind13"></div>
+            <div id="wind14"></div>
+            <div id="wind15"></div>
+            <div id="wind16"></div>
+            <div id="wind17"></div>
+            <div id="wind18"></div>
+            <div id="wind19"></div>
+            <div id="wind20"></div>
+            <div id="wind21"></div>
+            <div id="wind22"></div>
+            <div id="wind23"></div>
+            <div id="wind24"></div>
+            <div id="wind25"></div>
+            <div id="wind26"></div>
+            <div id="wind27"></div>
+            <div id="wind28"></div>
+            <div id="wind29"></div>
+            <div id="wind30"></div>
+            <div id="wind31"></div>
+            <div id="wind32"></div>
+            <div id="wind33"></div>
+            <div id="wind34"></div>
+            <div id="wind35"></div>
+            <div id="wind36"></div>
+            <div id="wind37"></div>
+            <div id="wind38"></div>
+            <div id="wind39"></div>
+        </div>
+    
+
+        <div id="icon_every3hours">
+            <div><img id="img0" src="" alt=""></div>
+            <div><img id="img1" src="" alt=""></div>
+            <div><img id="img2" src="" alt=""></div>
+            <div><img id="img3" src="" alt=""></div>
+            <div><img id="img4" src="" alt=""></div>
+            <div><img id="img5" src="" alt=""></div>
+            <div><img id="img6" src="" alt=""></div>
+            <div><img id="img7" src="" alt=""></div>
+            <div><img id="img8" src="" alt=""></div>
+            <div><img id="img9" src="" alt=""></div>
+            <div><img id="img10" src="" alt=""></div>
+            <div><img id="img11" src="" alt=""></div>
+            <div><img id="img12" src="" alt=""></div>
+            <div><img id="img13" src="" alt=""></div>
+            <div><img id="img14" src="" alt=""></div>
+            <div><img id="img15" src="" alt=""></div>
+            <div><img id="img16" src="" alt=""></div>
+            <div><img id="img17" src="" alt=""></div>
+            <div><img id="img18" src="" alt=""></div>
+            <div><img id="img19" src="" alt=""></div>
+            <div><img id="img20" src="" alt=""></div>
+            <div><img id="img21" src="" alt=""></div>
+            <div><img id="img22" src="" alt=""></div>
+            <div><img id="img23" src="" alt=""></div>
+            <div><img id="img24" src="" alt=""></div>
+            <div><img id="img25" src="" alt=""></div>
+            <div><img id="img26" src="" alt=""></div>
+            <div><img id="img27" src="" alt=""></div>
+            <div><img id="img28" src="" alt=""></div>
+            <div><img id="img29" src="" alt=""></div>
+            <div><img id="img30" src="" alt=""></div>
+            <div><img id="img31" src="" alt=""></div>
+            <div><img id="img32" src="" alt=""></div>
+            <div><img id="img33" src="" alt=""></div>
+            <div><img id="img34" src="" alt=""></div>
+            <div><img id="img35" src="" alt=""></div>
+            <div><img id="img36" src="" alt=""></div>
+            <div><img id="img37" src="" alt=""></div>
+            <div><img id="img38" src="" alt=""></div>
+            <div><img id="img39" src="" alt=""></div>
+        </div>
+
+        <div id="pressure_every3hours"></div>
+
+               
+    </div>  
+        
+    <script src="script.js"></script>
+</body>
+</html>
